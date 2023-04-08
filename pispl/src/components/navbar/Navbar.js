@@ -11,7 +11,7 @@ export default function Navbar() {
             
             <div className="logo-container">
                 <div  style={{color: "white", display: "flex", flexDirection: "row" }} >
-                    <NavLink to="#">
+                    <NavLink to="/">
                     <img src="https://parikhinfosolutions.com/wp-content/uploads/2023/01/logo-desktop.webp" alt="Logo" width="55" height="55"  /></NavLink>
                         <div style={{ color: "white", margin:"auto"}}>
                             <p className='h6 ms-2 '>Parikh info Solution Pvt. Ltd. <br /><span className='small'>Localization & globalization</span>
@@ -64,19 +64,19 @@ export default function Navbar() {
                             </div>
                         </li>
                         <li className="nav-link" style={{'--i': 1}} >
-                            <a href="#">About Us</a>
+                            <a href="/">About Us</a>
                         </li>
                         <li className="nav-link" style={{'--i': 1}} >
-                            <a href="#">Clients</a>
+                            <a href="/">Clients</a>
                         </li>
                         <li className="nav-link" style={{'--i': 1}}>
-                            <a href="#">Blogs</a>
+                            <a href="/">Blogs</a>
                         </li>
                         <li className="nav-link" style={{'--i': 1}}>
-                            <a href="#">Join Now</a>
+                            <a href="/">Join Now</a>
                         </li>
                         <li className="nav-link"style={{'--i': 1}}>
-                            <a href="#">Contact</a>
+                            <a href="/">Contact</a>
                         </li>
                     </ul>
                 </div>

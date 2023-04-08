@@ -535,3 +535,13 @@ section{
 
    
 }
+@media(max-width: 415px){
+	.adarsh{
+        margin-top: 2rem;
+    }
+}
+@media(max-width:595px){
+    .adarsh{
+        margin-top: 2rem;
+    }
+}
