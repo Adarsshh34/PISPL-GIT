@@ -29,9 +29,9 @@ export default function Banner(props) {
                         <button  style={buttonstyle}>Download Free Brochure <FaBook/></button>
                     </div>
                     <div className='col-md-5 d-flex justify-content-center adarsh'>
-                        <div className='' style={{height:"364px",width:"364px"}}>
-                            <Lottie animationData={props.a} />
-                            {props.flag && <img src={props.b} style={{height:"364px",width:"364px"}}></img>}
+                        <div className='' >
+                            {!props.flag && <Lottie animationData={props.a}  style={{height:"364px", width:"364px"}}/>}
+                            {props.flag && <img src={props.b} style={{height:"456px",width:"456px"}}></img>}
                         </div>
                     </div>
                 </div>

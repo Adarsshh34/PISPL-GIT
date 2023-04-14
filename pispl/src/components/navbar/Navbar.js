@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BiCaretDown } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
 export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+    function handleDropdownClick() {
+        setIsOpen(false);
+      }
   return (
     <>
     <header>
         <div className="container-fluid d-flex align-items-center py-3
         ">
-            <input type="checkbox" name="" id="check"/>
+            {/* <input type="checkbox" name="" id="check"/> */}
+            <input type="checkbox" id="check" checked={isOpen} onChange={() => setIsOpen(!isOpen)} />
             
             <div className="logo-container">
                 <div  style={{color: "white", display: "flex", flexDirection: "row" }} >
@@ -29,34 +34,34 @@ export default function Navbar() {
                             <div className="dropdown">
                                 <ul>
                                     <li className="dropdown-link">
-                                        <NavLink to="/translation">Translation Services</NavLink>
+                                        <NavLink to="/translation" onClick={handleDropdownClick}>Translation Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/transcription">Transcription Services</NavLink>
+                                        <NavLink to="/transcription" onClick={handleDropdownClick}>Transcription Services</NavLink>
+                                    </li>
+                                    <li className="dropdown-link" >
+                                        <NavLink to="/localiztion" onClick={handleDropdownClick}>Localization Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/localiztion">Localization Services</NavLink>
+                                        <NavLink to="/voiceover" onClick={handleDropdownClick}>Voice over Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/voiceover">Voice over Services</NavLink>
+                                        <NavLink to="/dubbing" onClick={handleDropdownClick}>Dubbing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/dubbing">Dubbing Services</NavLink>
+                                        <NavLink to="/aidubbing" onClick={handleDropdownClick}>AI Dubbing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/aidubbing">AI Dubbing Services</NavLink>
+                                        <NavLink to="/videosubtitling" onClick={handleDropdownClick}>Video Subtitling Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/videosubtitling">Video Subtitling Services</NavLink>
+                                        <NavLink to="/interpretation" onClick={handleDropdownClick}>Interpretation Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/interpretation">Interpretation Services</NavLink>
+                                        <NavLink to="/contentwriting" onClick={handleDropdownClick}>Content Writing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/contentwriting">Content Writing Services</NavLink>
-                                    </li>
-                                    <li className="dropdown-link">
-                                        <NavLink to="/videocreation">Video creation Services</NavLink>
+                                        <NavLink to="/videocreation" onClick={handleDropdownClick}>Video creation Services</NavLink>
                                     </li>
                                    
                                     <div className="arrow"></div>
