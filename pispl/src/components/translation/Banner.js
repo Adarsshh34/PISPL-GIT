@@ -22,7 +22,7 @@ export default function Banner(props) {
                 <div className='row align-items-center' style={{margin:"4% 8%"}} >
                     <div className='col-md-7 justify-content-center align-items-center '>
                         <h1 className='fw-bold py-3'>{arr[a].name_of_service}</h1>
-                        <div className='mb-2' style={{width:"40px",backgroundColor:"#49dab5",height:"5px"}}></div>
+                        <  div className='mb-2' style={{width:"40px",backgroundColor:"#49dab5",height:"5px"}}></>
                         <p className='py-2'>{arr[a].content1}</p>
                         <p className='py-2'>{arr[a].content2}</p>
                         <p className='py-2'>{arr[a].content3}</p>
